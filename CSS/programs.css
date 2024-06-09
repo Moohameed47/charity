@@ -1,0 +1,44 @@
+:root {
+    font-size: 16px;
+    --orange: #f15b43;
+    --light-blue: #65c9bb;
+    --dark-blue: #263b5c;
+    --light-gray: #777777;
+    --light-light-gray: #f4f2f1;
+}
+.goals {
+    padding: 80px 0;
+}
+.goals .row {
+    justify-content: space-between;
+}
+.goals .row .col-4 {
+    width: 49%;
+    margin-top: 25px;
+}
+.goals .row .col-4 .row .col-4 {
+    width: 33.33%;
+}
+.goals .row .col-4 .row .col-4:not(:first-child) {
+    padding-left: 30px;
+}
+.goals .row .col-4 .row .col-4:last-child {
+    padding-left: 50px;
+}
+.goals .title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "Rubik", sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--light-blue);
+}
+.goals h2 {
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 2.85rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}

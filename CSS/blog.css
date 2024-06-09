@@ -1,0 +1,224 @@
+:root {
+    font-size: 16px;
+    --orange: #f15b43;
+    --light-blue: #65c9bb;
+    --dark-blue: #263b5c;
+    --light-gray: #777777;
+    --light-light-gray: #f4f2f1;
+}
+.goals {
+    padding: 100px 0;
+}
+.goals .data .row {
+    justify-content: space-between;
+}
+.goals .data .row .col-8 {
+    padding-right: 5px;
+}
+.goals .data .row .col-8 .item {
+    margin-bottom: 50px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+}
+.goals .data .row .col-8 .item .data {
+    padding: 50px 0 10px 30px;
+}
+.goals .data .row .col-8 .item .data h4 {
+    font-size: 1.5rem;
+}
+.goals .data .row .col-8 .item .data p span:first-of-type {
+    color: #999999;
+    padding-right: 10px;
+    transition: all 0.5s;
+    font-size: 0.851rem;
+    cursor: pointer;
+}
+.goals .data .row .col-8 .item .data p span:last-of-type {
+    color: #999999;
+    font-size: 0.851rem;
+    transition: all 0.5s;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.goals .data .row .col-8 .item .data p span i {
+    padding-right: 5px;
+}
+.goals .data .item .Img {
+    position: relative;
+}
+.goals .row .item h4 {
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.goals .row .item:hover h4 {
+    color: black;
+}
+.goals .row .item h4:hover,
+.goals .data .row .col-8 .item .data p span:hover {
+    color: var(--light-blue);
+}
+.goals .Date {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: var(--light-blue);
+    bottom: -20px;
+    left: 40px;
+    border-radius: 5px;
+    padding-top: 7px;
+    transition: all 0.3s;
+    color: white;
+}
+.goals .Date:hover {
+    color: var(--light-blue);
+    background: transparent;
+}
+.goals .Date span:first-child {
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding: 50px 0 0 28px;
+}
+.goals .Date span:last-child {
+    font-size: 1.2rem;
+    font-family: "Rubik", sans-serif;
+    padding: 0 0 0 28px;
+}
+.goals .icons .row {
+    justify-content: center;
+}
+.goals .icons .row button {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 0 5px;
+    color: #999999;
+    border: 1px solid #d6d6d6d1;
+    transition: all 0.5s;
+}
+.goals .icons .row button:hover {
+    color: var(--light-blue);
+}
+.goals .icons .row button:nth-child(2),
+.goals .icons .row button:nth-child(3) {
+    font-size: 0.9rem;
+}
+.goals .data .row .col-4 .item {
+    padding: 25px 28px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    background: #fbf9ff;
+}
+.goals.data .row .col-4 .item:hover button {
+    background: var(--light-blue);
+    color: white;
+}
+.goals .data .row .col-4 .item input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #d6d6d6d1;
+}
+.goals .data .row .col-4 .item input:focus {
+    outline: none;
+}
+.goals .data .row .col-4 .item button {
+    padding: 13.5px 18px;
+    background: var(--light-blue);
+    margin-left: -1px;
+    color: white;
+    border: 1px solid var(--light-blue);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.goals .data .row .col-4 .item ul {
+    width: 100%;
+}
+.goals .data .row .col-4 .item ul li {
+    padding: 15px 0 12px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    line-height: 1.6;
+    border-bottom: 1px solid #d6d6d6d1;
+}
+.goals .data .row .col-4 .item ul li:first-child {
+    margin-bottom: 30px;
+    font-family: "Jost", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.goals .data .row .col-4 .item ul li:last-child {
+    border-bottom: 1px solid transparent;
+}
+.goals .data .row .col-4 .item ul li:first-child a {
+    color: black;
+}
+
+.goals .data .row .col-4 .item ul li a {
+    color: var(--light-gray);
+    transition: all 0.2s;
+}
+.goals .data .row .col-4 .item ul li:hover a {
+    color: var(--light-blue);
+}
+.goals .data .row .col-4 .item .posts li {
+    justify-content: left;
+    align-items: center;
+}
+.goals .data .row .col-4 .item .posts li .div {
+    padding-left: 20px;
+}
+.goals .data .row .col-4 .item .posts li .div h4 {
+    font-weight: 500;
+    padding-bottom: 4px;
+    font-family: "Jost", sans-serif;
+}
+.goals .data .row .col-4 .item .posts li .div h5 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #777777;
+}
+.goals .data .row .col-4 .item .posts li {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid transparent;
+}
+.goals .data .row .col-4 .item .posts li:first-child {
+    border-bottom: 1px solid #d6d6d6d1;
+}
+.goals .data .row .col-4 .item .btns li:first-child {
+    padding-top: 0;
+}
+.goals .data .row .col-4 .item .btns li:not(:first-child) a {
+    padding: 4px 20px;
+    background: white;
+    border: 1px solid #eeeeee;
+    font-size: 0.85rem;
+    margin: 0 8px 8px 0;
+}
+.goals .data .row .col-4 .item .btns .row {
+    justify-content: start;
+}
+.goals .data .row .col-4 .item .imgs .row {
+    justify-content: space-between;
+}
+.goals .data .row .col-4 .item .imgs .row span {
+    width: 31%;
+    margin-bottom: 15px;
+}
+.goals .data .row .col-4 .item .boton {
+    margin-top: 15px;
+    width: 100%;
+    margin-left: 0;
+    padding: 18px 0;
+    font-size: 0.95rem;
+    font-family: "Jost", sans-serif;
+    color: var(--light-blue);
+    background: #fff;
+    border: 1px solid var(--light-blue);
+    transition: all 0.5s;
+}
+.goals .data .row .col-4 .item .boton:hover {
+    color: #fff;
+    background: var(--light-blue);
+}

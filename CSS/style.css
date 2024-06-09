@@ -1,0 +1,1144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Jost", sans-serif;
+}
+img,
+iframe {
+    width: 100%;
+    display: block;
+}
+:root {
+    font-size: 16px;
+    --orange: #f15b43;
+    --light-blue: #65c9bb;
+    --dark-blue: #263b5c;
+    --light-gray: #777777;
+    --light-light-gray: #f4f2f1;
+}
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+textarea {
+    resize: vertical;
+}
+.container {
+    width: 85%;
+    margin: auto;
+}
+.btn {
+    padding: 20px 40px;
+    background-color: var(--light-blue);
+    text-decoration: none;
+    color: white;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-5 {
+    width: 41.66666667%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33333333%;
+}
+.col-11 {
+    width: 91.66666667%;
+}
+.col-12 {
+    width: 100%;
+}
+/* ************************************************** */
+
+/* <NAVBAR> */
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background: var(--dark-blue);
+    z-index: 9999;
+}
+.nav > .row {
+    margin: auto;
+    width: 94.5%;
+    align-items: center;
+}
+.nav .row .col:first-child {
+    width: 70%;
+}
+.nav .row .col .Links {
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .row .links ul {
+    padding-right: 125px;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+}
+.nav .row .links ul li {
+    padding: 0 20px;
+}
+.nav .row .links ul li:hover a {
+    color: var(--light-blue);
+}
+.nav .row .links ul li a {
+    color: white;
+    transition: all 0.5s;
+}
+.nav .row .col:last-child p {
+    font-family: "Rubik", sans-serif;
+    color: white;
+    font-size: 1.05rem;
+    padding-left: 10px;
+    display: inline;
+}
+.nav .row .col:last-child p a {
+    border-bottom: 2px dotted white;
+    padding-bottom: 5px;
+}
+.nav .row .col button {
+    text-transform: lowercase;
+    background-color: var(--orange);
+    padding: 20px 29px;
+    margin-left: 20px;
+    border: 2px solid var(--orange);
+    transition: all 0.5s;
+}
+.nav .row .col button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+}
+.nav .row .col button i {
+    color: white;
+    font-size: 1.1rem;
+}
+.nav .row .col button a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+/* <NAVBAR> */
+
+/* <HOME> */
+.home {
+    height: 133vh;
+    background-image: url("../Images/Home/bg1.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home .row {
+    height: 133vh;
+    align-items: center;
+    color: white;
+}
+.home .row .data {
+    margin-top: -1.5rem;
+}
+.home .row .data h1 {
+    font-family: "Jost", sans-serif;
+    font-size: 4.2rem;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+.home .row .data p {
+    font-size: 1.37rem;
+    margin: 1.25rem 0 2.7rem 0;
+    font-family: "Rubik", sans-serif;
+    line-height: 1.5;
+}
+.home .row .data button {
+    font-size: 1.05rem;
+    border: 1px solid var(--light-blue);
+    transition: all 0.5s;
+}
+.home .row .data button:hover {
+    background: transparent;
+    border: 1px solid white;
+}
+.home .row .data button a {
+    color: white;
+    text-decoration: none;
+}
+/* </HOME> */
+
+/* <UPCOMING> */
+.UpComing {
+    padding: 45px 0;
+    background-color: #fcf2eb;
+    font-family: "Jost", sans-serif;
+}
+.UpComing .row {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+}
+.UpComing .img {
+    padding: 12px;
+}
+.UpComing .row .col-5 {
+    padding: 12px;
+}
+.UpComing .data .title {
+    color: var(--light-blue);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 10px;
+}
+.UpComing .data h2 {
+    font-size: 2.85rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: var(--dark-blue);
+}
+.UpComing .data p {
+    font-size: 1.11rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Rubik", sans-serif;
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+    color: var(--light-gray);
+}
+.UpComing .data button {
+    background-color: var(--orange);
+    padding: 20px 35px;
+    font-size: 1.11rem;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    border: 2px solid var(--orange);
+}
+.UpComing .data button:last-of-type {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    padding: 20px 30px;
+    letter-spacing: 0.1px;
+}
+.UpComing .data button:last-of-type a {
+    color: var(--orange);
+    font-weight: 400;
+}
+.UpComing .data button a {
+    color: #fff;
+    text-decoration: none;
+}
+/* </UPCOMING> */
+
+/* <ABOUT> */
+.AboutUs {
+    padding: 80px 0;
+    font-family: "Jost", sans-serif;
+}
+.AboutUs .row {
+    justify-content: space-between;
+    align-items: center;
+}
+.AboutUs .img {
+    padding: 12px;
+}
+.AboutUs .row .col-5 {
+    padding: 15px;
+}
+.AboutUs .data .title {
+    color: var(--light-blue);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 10px;
+}
+.AboutUs .data h2 {
+    font-size: 2.85rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    margin-right: 8rem;
+    color: var(--dark-blue);
+}
+.AboutUs .data p {
+    font-size: 1.11rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Rubik", sans-serif;
+    margin-right: 8rem;
+    margin-bottom: 2.5rem;
+    color: var(--light-gray);
+}
+.AboutUs .data button {
+    background-color: var(--orange);
+    padding: 20px 35px;
+    font-size: 1.11rem;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    border: 2px solid var(--orange);
+    transition: all 0.5s;
+}
+.AboutUs .data button a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.AboutUs .data button:hover,
+.AboutUs .data button:hover a {
+    background-color: transparent;
+    color: var(--orange);
+}
+/* </UPCOMING> */
+
+/* <GOALS> */
+.goals {
+    padding-bottom: 30px;
+}
+.goals > .row {
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.goals .row > .col-4 {
+    width: 32.3333%;
+}
+.goals .row .item {
+    background: var(--light-light-gray);
+}
+.goals .row .data {
+    padding: 20px;
+}
+.goals .row .data .row {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 5px;
+}
+.goals .row .data h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 8px 0 10px 0;
+    color: var(--dark-blue);
+    transition: all 0.8s;
+}
+.goals .row .item:hover h4 {
+    color: var(--orange);
+}
+.goals .row .data p {
+    color: var(--light-gray);
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+.goals .data button {
+    background-color: var(--orange);
+    padding: 15px 50px;
+    font-size: 1.11rem;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    border: 2px solid var(--orange);
+    transition: all 0.8s;
+}
+.goals .data button a {
+    color: white;
+    transition: all 0.8s;
+}
+.goals .item:hover button,
+.goals .item:hover button a {
+    background-color: transparent;
+    color: var(--orange);
+}
+.goals .row .data .row .price {
+    color: var(--light-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.goals .row .data .row span {
+    font-size: 0.95rem;
+    color: var(--dark-blue);
+}
+/* </GOALS> */
+
+/* <HELPING> */
+.helping {
+    padding: 45px 0;
+    font-family: "Jost", sans-serif;
+}
+.helping .row {
+    justify-content: space-between;
+    align-items: center;
+}
+.helping .img {
+    padding: 12px;
+    padding-left: 108px;
+}
+.helping .row .col-5 {
+    padding: 15px;
+}
+.helping .data .title {
+    color: var(--light-blue);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "Rubik", sans-serif;
+    text-transform: capitalize;
+}
+.helping .data h2 {
+    font-size: 2.85rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: var(--dark-blue);
+}
+.helping .data p {
+    font-size: 1.11rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 2rem;
+    color: var(--light-gray);
+}
+.helping .data button {
+    font-size: 1.11rem;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    padding: 20px 30px;
+    letter-spacing: 0.1px;
+}
+.helping .data button a {
+    color: var(--orange);
+    font-weight: 400;
+}
+/* </HELPING> */
+
+/* <HowWe> */
+.HowWe {
+    padding: 100px 0;
+    background-image: url(../Images/Home/bg2.webp);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+.HowWe .title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "Rubik", sans-serif;
+    text-transform: capitalize;
+}
+.HowWe h2 {
+    font-size: 2.85rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 60px;
+}
+.HowWe .row {
+    justify-content: space-between;
+    margin: 0 -15px 50px -15px;
+}
+.HowWe .row p {
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Rubik", sans-serif;
+}
+.HowWe .row h4 {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.HowWe .Icon {
+    margin: auto;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+/* </HowWe> */
+
+/* <NEWS> */
+.news {
+    padding: 80px 0;
+}
+.news .row {
+    justify-content: space-between;
+}
+.news .title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: var(--light-blue);
+    font-family: "Rubik", sans-serif;
+}
+.news h2 {
+    color: var(--dark-blue);
+    font-size: 2.85rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+.news > .row {
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.news .row .item {
+    background: var(--light-light-gray);
+}
+.news .row .data {
+    padding: 30px;
+}
+.news .row .col-4 {
+    width: 35.8%;
+}
+.news .row .data h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 8px 0 10px 0;
+    color: var(--dark-blue);
+    transition: all 0.8s;
+}
+.news .row .item:hover h4 {
+    color: var(--orange);
+}
+.news .row .data p {
+    color: var(--light-gray);
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.news .row .data a {
+    color: var(--orange);
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--orange);
+    font-family: "Rubik", sans-serif;
+    transition: all 0.5s;
+}
+.news .row .data a:hover {
+    letter-spacing: 0.8px;
+}
+.news .row .dir {
+    height: 65px;
+    width: 65px;
+    background-color: transparent;
+    border: 1px solid #d1d1d1;
+    color: #d1d1d1;
+    margin-right: 3px;
+    transition: all 0.5s;
+    font-size: 1rem;
+}
+.news .row .dir:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: white;
+}
+/* </NEWS> */
+
+/* <COPY-WRITE> */
+.copy {
+    padding: 60px 0 0 0;
+    background: var(--dark-blue);
+}
+.copy .row {
+    margin: 0 -15px;
+}
+.copy .row .col-4 {
+    width: 31.33%;
+}
+.copy .row div:nth-child(1) {
+    padding-right: 1px;
+    margin-left: -8px;
+    margin-right: 8px;
+}
+.copy .row div:nth-child(2) {
+    width: 10%;
+    margin-left: 4%;
+}
+.copy .row div:nth-child(3) {
+    width: 25%;
+    margin-left: 9.5%;
+}
+.copy .row div:nth-child(4) {
+    width: 17.2%;
+    margin-left: 2.7%;
+}
+.copy .row .col-4 img {
+    width: 50%;
+    margin-bottom: 25px;
+}
+.copy .row p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+.copy .row :where(.col-4, .col-2) {
+    padding: 20px;
+}
+.copy .row h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: white;
+}
+.copy .row ul li {
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+.copy .row ul li a {
+    color: white;
+    transition: all 0.5s;
+    border-bottom: 2px solid transparent;
+}
+.copy .row ul a:hover {
+    border-color: white;
+}
+.copy .row button {
+    margin-top: 10px;
+    background-color: var(--orange);
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    border: 2px solid var(--orange);
+    transition: all 0.8s;
+}
+.copy .row button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+}
+.copy .row button a {
+    color: white;
+    text-transform: capitalize;
+}
+.copy .row div:nth-child(1) p {
+    margin-bottom: 15px;
+}
+.copy .row .card-icon.row {
+    width: 100%;
+    margin: 0;
+}
+.copy .row .card-icon a {
+    color: white;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    border-radius: 0%;
+    font-size: 20px;
+    margin-right: 8px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.copy .row .card-icon a i {
+    transition: all 0.5s;
+}
+.copy .row .card-icon a:hover i {
+    transform: rotatey(180deg);
+}
+.copy .row .card-icon a:first-child {
+    background: #3b5998;
+}
+.copy .row .card-icon a:nth-child(2) {
+    background: #0077b5;
+}
+.copy .row .card-icon a:nth-child(3) {
+    background: #405de6;
+}
+.copy .row .card-icon a:nth-child(4) {
+    background: #ff0000;
+}
+.copy .copywrite {
+    margin-top: 15px;
+    padding: 18px 0;
+    border-top: 1px solid rgba(211, 213, 226, 0.1);
+    text-align: center;
+    color: white;
+    font-size: 0.94rem;
+}
+.copy .copywrite span,
+.copy .copywrite i {
+    color: var(--light-blue);
+}
+/* </COPY-WRITE> */
+
+/* ********************* */
+/* <WE_ARE> */
+.head-sec {
+    height: 400px;
+    background-image: url(../Images/bgsec.webp);
+    background-position: center center;
+    background-size: cover;
+}
+.head-sec .row {
+    height: 100%;
+    align-items: center;
+}
+.head-sec .row .data {
+    padding: 100px 0 0 0;
+}
+.head-sec .row .data h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 3.23rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: white;
+}
+/* </WE_ARE>*/
+/* ********************* */
+/* <CONTACT> */
+.body {
+    padding: 100px 0;
+}
+.body .data .row.inputs {
+    justify-content: space-between;
+}
+.body .map {
+    margin-bottom: 70px;
+}
+.body .row h2 {
+    font-size: 1.6rem;
+    color: var(--dark-blue);
+}
+.body .data form {
+    margin-top: 20px;
+}
+.body .data input,
+.body .data textarea {
+    height: 45px;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px 12px;
+    margin: 10px 0;
+    width: 100%;
+}
+.body .data input::placeholder,
+.body .data textarea::placeholder {
+    color: #999999cc;
+    font-weight: 300;
+}
+.body .data input:focus,
+.body .data textarea:focus {
+    outline-color: #d1d1d1;
+}
+.body .data input[name="Name"] {
+    width: 48.5%;
+}
+.body .data input[name="Email"] {
+    width: 48.5%;
+}
+.body .data textarea {
+    height: 200px;
+}
+.body .data button {
+    background-color: transparent;
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+    padding: 20px 45px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.body .data button:hover {
+    background: var(--light-blue);
+    color: white;
+}
+.body .data .row {
+    justify-content: start;
+}
+.body .data .row .pp:first-child {
+    width: 15%;
+}
+.body .data .row ul {
+    padding-left: 130px;
+    padding-top: 70px;
+}
+.body .data .row ul li {
+    padding-bottom: 35px;
+    color: #777777;
+}
+.body .data .row ul li i {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+.body .data .row ul li p {
+    color: black;
+    font-weight: 400;
+}
+.body .data .row ul li .dark {
+    font-weight: 500;
+}
+/* </CONTACT> */
+/* ************************************************************************************ */
+/* ************************************************************************************ */
+/* ************************************************************************************ */
+/* ************************************************************************************ */
+/* *************************************RESPONSIVE************************************* */
+/* ************************************************************************************ */
+/* ************************************************************************************ */
+/* ************************************************************************************ */
+/* ************************************************************************************ */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    .nav .row .links ul {
+        padding-right: 0;
+    }
+    .nav .row .links ul li {
+        padding: 0 10px;
+    }
+    .nav .row .col:last-child p {
+        display: none;
+    }
+    .nav > .row {
+        margin: auto;
+        width: 95%;
+    }
+    .nav .row .col button {
+        margin-left: 60px;
+    }
+    .nav .row .col:first-child {
+        width: 73%;
+    }
+    .home .row .col-4 {
+        width: 50%;
+    }
+    .UpComing .row .col-5 {
+        width: 50%;
+    }
+    .UpComing .data p {
+        margin-right: 0;
+    }
+    .AboutUs .data p,
+    .AboutUs .data h2 {
+        margin-right: 0;
+    }
+    .goals .data button {
+        padding: 10px 20px;
+    }
+    .goals .row .data h4 {
+        font-size: 1.1rem;
+    }
+    .helping .img {
+        padding-left: 0;
+    }
+    .helping .row .col-5 {
+        width: 50%;
+    }
+    .HowWe .col-3 {
+        width: 32.333%;
+    }
+    .news .col-3 {
+        width: 100%;
+    }
+    .news h2 {
+        margin-bottom: 30px;
+    }
+    .news .row .col-4 {
+        width: 49%;
+        margin-top: 30px;
+    }
+    .copy .row div:nth-child(1) {
+        width: 49%;
+    }
+    .copy .row div:nth-child(2),
+    .copy .row div:nth-child(3) {
+        width: 23.5%;
+        margin-left: 0;
+    }
+    .copy .row div:nth-child(4) {
+        margin-left: 0;
+        width: 27.5%;
+    }
+    .body .data .row ul {
+        padding-left: 65px;
+    }
+    .body .pp:nth-child(2) {
+        margin-left: 10px;
+    }
+    .goals .row .data p {
+        padding-right: 25px;
+    }
+    .goals .data .row .col-4 .item .posts li .div {
+        width: 65%;
+    }
+    .goals .data .row .col-4 .item .posts li .div h4,
+    .goals .data .row .col-4 .item .posts li .div h5 {
+        word-break: break-word;
+    }
+    .goals .data .row .col-4 .item ul li {
+        border-bottom: 1px solid #d6d6d6d1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    :root {
+        font-size: 15px;
+    }
+    .container {
+        width: 75%;
+    }
+    .nav .row .links {
+        display: none;
+    }
+    .nav .row .col:first-child {
+        width: 50%;
+    }
+    .nav .row {
+        justify-content: space-between;
+    }
+    .nav .row .col button {
+        margin-left: 50px;
+    }
+    .home {
+        height: 92vh;
+    }
+    .home .row {
+        height: 92vh;
+    }
+    .home .row .col-4 {
+        width: 70%;
+    }
+    .home .row .col-4 h1 {
+        font-size: 3.3rem;
+    }
+    .UpComing .data h2 {
+        font-size: 2.55rem;
+    }
+    .AboutUs .data h2 {
+        font-size: 2.55rem;
+    }
+    .UpComing .row .col-6 {
+        width: 66%;
+    }
+    .UpComing .row .col-5 {
+        width: 74%;
+    }
+    .AboutUs .row .col-6 {
+        width: 66%;
+    }
+    .AboutUs .row .col-6:last-child {
+        margin-top: 15px;
+        width: 85%;
+    }
+    .goals .row > .col-4 {
+        width: 48.5%;
+        margin-bottom: 25px;
+    }
+    .goals .row .col-4 .row .col-4 {
+        width: 33.33%;
+    }
+    .goals .data button {
+        padding: 15px 35px;
+    }
+    .helping .row {
+        align-items: start;
+    }
+    .copy .row div:nth-child(1) {
+        width: 65%;
+    }
+    .copy .row div:nth-child(2) {
+        width: 35%;
+    }
+    .copy .row div:nth-child(3) {
+        width: 65%;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .copy .row div:nth-child(4) {
+        margin-left: 0;
+        width: 35%;
+        margin-top: 25px;
+    }
+    .copy .row div:nth-child(1) p {
+        padding-right: 23%;
+    }
+    .copy .row div:nth-child(3) ul {
+        padding-right: 50%;
+    }
+    .goals .data .row .col-8,
+    .goals .data .row .col-4 {
+        width: 100%;
+    }
+    .body .data .row .col-8,
+    .body .data .row .col-4 {
+        width: 100%;
+    }
+    .body .data .row ul {
+        padding-left: 0;
+    }
+    .body .data .row .pp:first-child {
+        width: auto;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .goals .row .data .row {
+        justify-content: start;
+    }
+    .goals .row .col-4 .row .col-4 {
+        width: 49% !important;
+    }
+    .goals .row .col-4 .row .col-4:last-child {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .home .row .data {
+        margin: 0;
+    }
+    .UpComing .row .col-6 {
+        margin: auto;
+        width: 80%;
+    }
+    .UpComing .row .col-5 {
+        margin: auto;
+        width: 80%;
+    }
+    .AboutUs .row .col-6 {
+        margin: auto;
+        width: 80%;
+    }
+    .AboutUs .row .col-6:last-child {
+        margin-top: 15px;
+        margin: auto;
+        width: 80%;
+    }
+    .helping .row .col-6,
+    .helping .row .col-5 {
+        margin: auto;
+        width: 80%;
+    }
+    .HowWe .row .col-3 {
+        width: 50%;
+    }
+    .news .col-3,
+    .news .row .col-4 {
+        width: 80%;
+        margin: auto;
+    }
+    .news .row .col-4:last-child,
+    .news .col-3 button {
+        display: none;
+    }
+    .copy .row {
+        margin: auto;
+    }
+    .copy .container {
+        width: 80%;
+    }
+    .copy .row div:nth-child(1) {
+        width: 100%;
+    }
+    .copy .row div:nth-child(1) img {
+        width: 40%;
+    }
+    .copy .row div:nth-child(2) {
+        width: 49%;
+        margin-top: 25px;
+    }
+    .copy .row div:nth-child(3) {
+        width: 49%;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .copy .row div:nth-child(4) {
+        margin-left: 0;
+        width: 50%;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95% !important;
+    }
+    :root {
+        font-size: 14px;
+    }
+    .nav .col:last-child {
+        display: none;
+    }
+    .home {
+        height: 80vh;
+    }
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+        width: 100% !important;
+    }
+    .col-11 .home .row .col-4 {
+        width: 100%;
+    }
+    .home .row .col-4 h1 {
+        font-size: 2.4rem;
+    }
+    .copy .row div:nth-child(1),
+    .copy .row div:nth-child(2),
+    .copy .row div:nth-child(3),
+    .copy .row div:nth-child(4) {
+        margin: 0 0 25px 0;
+        width: 100%;
+    }
+    .copy .row div:nth-child(1) p,
+    .copy .row div:nth-child(2) p,
+    .copy .row div:nth-child(3) p,
+    .copy .row div:nth-child(4) p {
+        padding: 0;
+    }
+}
